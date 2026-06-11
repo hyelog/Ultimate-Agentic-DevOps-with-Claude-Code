@@ -1,0 +1,1 @@
+- [Project infra security patterns](project_infra_patterns.md) — Recurring gaps in this repo's Terraform: local state file with account ID exposed, no TLS pinning, no security response headers, no access logging

@@ -1,0 +1,26 @@
+{
+  "mcpServers": {
+    "aws": {
+      "command": "uvx",
+      "args": [
+        "awslabs.aws-api-mcp-server@latest"
+      ],
+      "env": {}
+    },
+    "terraform": {
+      "type": "stdio",
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-v",
+        "{}/Ultimate-Agentic-DevOps-with-Claude-Code/terraform:/workspace",
+        "-w",
+        "/workspace",
+        "hashicorp/terraform-mcp-server"
+      ],
+      "env": {}
+    }
+  }
+}
